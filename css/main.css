@@ -21,7 +21,7 @@ body {
 }
 
 .message {
-    justify-content: center;
+    margin: auto;
 }
 
 h1 {
@@ -32,8 +32,13 @@ h1 {
     margin-bottom: 0.5em;
 }
 
+h2 {
+    line-height: 1.5em;
+    font-size: 3em;
+    font-weight: 300;
+}
+
 h3 {
-    justify-content: flex-start;
     line-height: 1.3em;
     font-weight: 200;
 }

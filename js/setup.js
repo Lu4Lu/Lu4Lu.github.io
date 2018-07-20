@@ -1,25 +1,14 @@
 'use strict';
 (function () {
-  //
-  // var MOCK_WORDS = [
-  //   'Иван',
-  //   'Хуан Себастьян',
-  //   'Мария',
-  //   'Кристоф',
-  //   'Виктор',
-  //   'Юлия',
-  //   'Люпита',
-  //   'Вашингтон'
-  // ];
 
-  var MOCK_BACKGROUNDS = [
-    'rgb(101, 137, 164)',
-    'rgb(241, 43, 107)',
-    'rgb(146, 100, 161)',
-    'rgb(56, 159, 117)',
-    'rgb(215, 210, 55)',
-    'rgb(0, 0, 0)'
-  ];
+  // var MOCK_BACKGROUNDS = [
+  //   'rgb(101, 137, 164)',
+  //   'rgb(241, 43, 107)',
+  //   'rgb(146, 100, 161)',
+  //   'rgb(56, 159, 117)',
+  //   'rgb(215, 210, 55)',
+  //   'rgb(0, 0, 0)'
+  // ];
 
   var Keycode = {
     ESC: 27,
@@ -27,29 +16,18 @@
     ENTER: 13
   };
 
-  // var backgroundElement = document.querySelector('.word');
+  var nauhatlWordElement = document.querySelector('.nauhatl_word');
+  var transcriptionElement = document.querySelector('.transcription');
+  var translationElement = document.querySelector('.translation');
 
-  // random from range
-  function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-
-  // random array index
-  function getRandomIndex(arr) {
-    return getRandomInt(0, arr.length - 1);
-  }
-
-  function getRandomItem(arr) {
-    // search for the index
-    var index = getRandomIndex(arr);
-    var item = arr[index];
-    // remove this item from array
-    return item;
-  }
 
   function setNewWord() {
+    var index = window.getRandomInt(0, 7);
     // backgroundElement.style.backgroundColor = getRandomItem(MOCK_BACKGROUNDS);
-    document.body.style.background = getRandomItem(MOCK_BACKGROUNDS);
+    document.body.style.backgroundColor = window.wordEntries[index].background;
+    nauhatlWordElement.textContent = window.wordEntries[index].nauhatlWord;
+    transcriptionElement.textContent = window.wordEntries[index].transcription;
+    translationElement.textContent = window.wordEntries[index].translation;
   }
 
   document.addEventListener('keydown', function (evt) {
