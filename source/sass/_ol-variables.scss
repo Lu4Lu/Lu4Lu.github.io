@@ -1,0 +1,71 @@
+//Colors
+
+$white: #f4f7f9;
+$black: #000000;
+
+$black-5: rgba(0, 0, 0, 0.05);
+$black-10: rgba(0, 0, 0, 0.1);
+$black-90: rgba(99, 99, 99, 0.9);
+
+$queen-blue: #427aa1;
+$see-blue: #05668d;
+$max-green: #679436;
+$limerick: #a5be00;
+
+// Margins
+//
+$margin-5: 5px;
+$margin-10: 10px;
+$margin-15: 15px;
+$margin-20: 20px;
+$margin-25: 25px;
+$margin-30: 30px;
+$margin-35: 35px;
+$margin-40: 40px;
+$margin-85: 85px;
+$margin-105: 105px;
+$margin-170: 170px;
+$margin-275: 275px;
+$margin-445: 445px;
+$margin-720: 720px;
+
+// Typography
+//
+$font-family-regular: "CirceSlab_C", georgia, serif;
+
+$font-size-root: 16px;
+$font-size-root-unitless: 16;
+
+$font-size-18: 18px;
+$font-size-21: 21px;
+$font-size-22: 22px;
+$font-size-24: 24px;
+$font-size-26: 26px;
+$font-size-28: 28px;
+$font-size-30: 30px;
+$font-size-32: 32px;
+$font-size-36: 36px;
+$font-size-40: 40px;
+$font-size-45: 45px;
+$font-size-60: 60px;
+$font-size-66: 66px;
+$font-size-70: 70px;
+
+$line-height: 1.5em;
+$line-height-smaller: 1.2em;
+
+// Breakpoints
+//
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+//Resolutions
+//
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+//Duration
+//
+$duration: 0.5s;
+$duration-03: 0.3s;
