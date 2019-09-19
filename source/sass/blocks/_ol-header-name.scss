@@ -1,16 +1,18 @@
 .header-name {
+  margin-bottom: 2em;
+
   &__name {
     font-size: $font-size-28;
     margin: 0;
-    margin-bottom: 10px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .header-name {
+    margin-bottom: 4em;
+
     &__name {
       font-size: $font-size-40;
-      margin-bottom: 40px;
     }
   }
 }

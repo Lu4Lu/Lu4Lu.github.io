@@ -7,16 +7,13 @@
 
   &__text {
     box-sizing: border-box;
-    font-size: $font-size-root;
     margin: 0;
     margin-bottom: 25px;
   }
 
   &__link {
     box-sizing: border-box;
-    font-size: $font-size-root;
-    font-weight: 600;
-
+    font-style: italic;
     margin: 0;
     padding: 0;
   }
@@ -25,25 +22,13 @@
 @media (min-width: $tablet-width) {
   .caption {
     &__text {
-      font-size: $font-size-21;
       margin-bottom: 35px;
-    }
-
-    &__link {
-      font-size: $font-size-21;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .caption {
-    &__text {
-      font-size: $font-size-28;
-      margin-bottom: 45px;
-    }
-
-    &__link {
-      font-size: $font-size-28;
-    }
+    margin-bottom: 45px;
   }
 }

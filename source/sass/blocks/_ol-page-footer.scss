@@ -4,18 +4,10 @@
 
   &__text {
     color: $black-90;
-    font-size: $font-size-root;
     padding-bottom: 40px;
     margin: 0;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
-    // padding-left: 140px;
-
-    &__text {
-      font-size: $font-size-21;
-    }
-  }
 }

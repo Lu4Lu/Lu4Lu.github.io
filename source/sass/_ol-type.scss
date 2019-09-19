@@ -79,59 +79,56 @@ body {
   background-color: $white;
 }
 
-ul,
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 li {
   margin: 0;
   padding: 0;
 }
 
-h1,
-h2 {
+.title {
   font-size: $font-size-root;
   line-height: $line-height;
 }
 
-p {
+.text {
   font-size: $font-size-root;
   line-height: $line-height;
 }
 
-a {
+.link {
   font-size: $font-size-root;
-  text-decoration: underline;
-  text-decoration-color: $max-green;
-  color: $max-green;
+  text-decoration: underline dotted;
+  text-decoration-color: $limerick;
+  color: $limerick;
 }
 
 @media (min-width: $tablet-width) {
-  h1,
-  h2 {
-    font-size: $font-size-21;
+  .title {
+    font-size: 1.3rem;
   }
 
-  p {
-    font-size: $font-size-21;
+  .text {
+    font-size: 1.3rem;
   }
 
-  a {
-    font-size: $font-size-21;
+  .link {
+    font-size: 1.3rem;
+    color: $limerick;
   }
 }
 
 @media (min-width: $desktop-width) {
-  h1,
-  h2 {
-    font-size: $font-size-28;
-    line-height: $line-height-smaller;
+  .title,
+  .text {
+    font-size: 1.65rem;
   }
 
-  p {
-    font-size: $font-size-28;
-    line-height: $line-height-smaller;
-  }
-
-  a {
-    font-size: $font-size-28;
-    line-height: $line-height-smaller;
+  .link {
+    font-size: 1.65rem;
   }
 }

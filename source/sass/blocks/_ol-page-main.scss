@@ -2,28 +2,34 @@
   display: block;
   min-width: 320px;
   background-color: $white;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 140px 20px 20px 20px;
+  margin: 0 auto;
+  padding: 7em 1.5em 4em 1.5em;
 }
 
 .wrapper {
-  max-width: 340px;
+  max-width: 20em;
 }
 
 @media (min-width: $tablet-width) {
   .page-main {
     line-height: $line-height-smaller;
+    padding-top: 10em;
+    padding-bottom: 6em;
   }
 
   .wrapper {
     margin: 0 auto;
-    max-width: 450px;
+    max-width: 30em;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-main {
+    padding-top: 15em;
+    padding-bottom: 10em;
+  }
+
   .wrapper {
-    max-width: 600px;
+    max-width: 40em;
   }
 }
