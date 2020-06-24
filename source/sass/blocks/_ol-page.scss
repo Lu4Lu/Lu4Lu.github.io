@@ -1,4 +1,4 @@
-.page-main {
+.page {
   display: block;
   min-width: 320px;
   background-color: $white;
@@ -11,7 +11,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-main {
+  .page {
     line-height: $line-height-smaller;
     padding-top: 10em;
     padding-bottom: 6em;
@@ -24,7 +24,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-main {
+  .page {
     padding-top: 15em;
     padding-bottom: 10em;
   }
